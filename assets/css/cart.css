@@ -1,0 +1,198 @@
+/* No cart */
+.product-cart {
+  margin-top: 120px;
+}
+.product-cart-colunm {
+  margin: auto;
+  width: 600px;
+}
+.product-car__header {
+  display: flex;
+  align-items: center;
+}
+.product-car__header-back-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.product-car__header-back-icon {
+  margin-right: 4px;
+}
+.product-car__heading {
+  flex: 0.89;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+}
+.product-car__header-back-content:hover {
+  text-decoration: underline;
+}
+.product-no-cart-icon {
+  margin: 100px;
+  display: block;
+  font-size: 5rem;
+  text-align: center;
+}
+.product-no-cart-content {
+  font-size: 2.2rem;
+  color: var(-text-color);
+  margin-bottom: 50px;
+}
+.product-no-cart__btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 6px;
+  width: 150px;
+  height: 42px;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+.product-no-cart__btn:hover {
+  text-decoration: underline;
+}
+/* List cart */
+
+.product-cart__item {
+  display: flex;
+  border-radius: 6px;
+  -webkit-box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  padding: 12px;
+  position: relative;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+.product-cart__item:hover{
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  transform: scale(1.01);
+  z-index: 1;
+}
+
+.product-cart__item-img {
+  width: 30%;
+}
+.product-cart__item-img img {
+  width: 100%;
+  height: auto;
+}
+
+.product-cart__item-body {
+  flex: 1;
+  padding-left: 8px;
+}
+.product-cart__item-heading,
+.product-cart__order-header {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.product-cart__item-price {
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+}
+.product-cart__item-price p {
+  margin: 8px 0;
+}
+.product-cart__item-price-new {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.product-cart__item-price-old {
+  text-decoration: line-through;
+  color: #777;
+  padding: 0 12px;
+}
+.product-cart__item-price-discount {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  padding: 4px;
+}
+.product-cart__amount {
+  font-size: 1.4rem;
+}
+.product-cart__amount input {
+  width: 80px;
+  outline-color: #777;
+}
+.product-cart__pomotion {
+  background-color: #f6f6f6;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  padding: 12px 8px 12px 24px;
+  list-style-type: var(--primary-color);
+}
+.product-cart__pomotion p {
+  text-align: center;
+}
+.product-cart__item-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ccc;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.product-cart__order {
+  border-radius: 6px;
+  -webkit-box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  padding: 12px;
+  margin-top: 16px;
+}
+.product-cart__order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.product-cart__order-header h3 {
+  margin: 0;
+}
+
+.product-cart__order-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+.product-cart__order-btn,
+.product-cart__order-btn-orther {
+  height: 60px;
+  font-size: 1.6rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.product-cart__order-btn-orther {
+  display: flex;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.product-cart__order-btn-orther:hover  {
+  color: var(--white-color);
+  background-color: var(--primary-hover-color);
+}

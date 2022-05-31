@@ -1,0 +1,151 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Phone</title>
+    <!-- import JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- import css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/product_detail.css">
+    <link rel="stylesheet" href="../assets/css/cart.css">
+    <script src="../program.js"></script>
+</head>
+<script>
+    $(function () {
+        $(".header-app").load("header.html");
+    });
+</script>
+<div class="header-app"></div>
+<div class="product-cart">
+    <div class="grid">
+        <div class="grid__row">
+            <div class="grid__colunm-3-4 product-cart-colunm">
+                <div class="product-car__header">
+                    <a href="./index.html" class="product-car__header-back-link">
+                        <i class="fa-solid fa-angle-left product-car__header-back-icon "></i>
+                        <h3 class="product-car__header-back-content">
+                            Trở về
+                        </h3>
+                    </a>
+
+                    <h3 class="product-car__heading">
+                        Giỏ hàng
+                    </h3>
+                </div>
+                <!-- <div class="product-no-cart">
+                   <i class="product-no-cart-icon fa-solid fa-face-frown">
+                      
+                   </i>
+                   <p class="product-no-cart-content">Không có sản phẩm nào trong giỏ hàng, vui lòng quay lại</p>
+                   
+                    <a class="product-no-cart__btn" href="./index.html">
+                      <p> Quay về trang chủ </p> 
+                    </a>
+                  
+                   
+               </div> -->
+                <div class="product-cart__list">
+                    <div class="product-cart__item">
+                        <div class="product-cart__item-img">
+                            <img src="https://image.cellphones.com.vn/200x/media/catalog/product/i/p/iphone_13-_pro-2_1_6.jpg"
+                                alt="">
+                        </div>
+                        <div class="product-cart__item-body">
+                            <h3 class="product-cart__item-heading">
+                                iPhone 13 Pro Max-Vàng
+                            </h3>
+                            <div class="product-cart__item-price">
+                                <p class="product-cart__item-price-new">29.690.000 ₫</p>
+                                <p class="product-cart__item-price-old">34.990.900 đ</p>
+                                <p class="product-cart__item-price-discount">Giảm 15%</p>
+
+                            </div>
+                            <div class="product-cart__amount">
+                                <span>Chọn số lượng:</span>
+                                <input type="number" min="1" value="1">
+                            </div>
+                            <ul class="product-cart__pomotion">
+                                <p> Chương trình khuyến mại:</p>
+                                <li class="product-cart__pomotion-item">
+                                    Thu cũ lên đời - Trợ giá 1 triệu
+                                </li>
+                                <li class="product-cart__pomotion-item">
+                                    Nhập mã CPSONL500 - Giảm thêm 500k khi thanh toán qua VNPay trên website hoặc CPS500
+                                    qua QR Offline tại cửa hàng
+                                </li>
+                            </ul>
+
+
+                        </div>
+                        <div class="product-cart__item-delete">
+                            <i class="fa-light fa-x"></i>
+                         </div>
+
+                    </div>
+                    <div class="product-cart__item">
+                        <div class="product-cart__item-img">
+                            <img src="https://image.cellphones.com.vn/200x/media/catalog/product/i/p/iphone_13-_pro-2_1_6.jpg"
+                                alt="">
+                        </div>
+                        <div class="product-cart__item-body">
+                            <h3 class="product-cart__item-heading">
+                                iPhone 13 Pro Max-Vàng
+                            </h3>
+                            <div class="product-cart__item-price">
+                                <p class="product-cart__item-price-new">29.690.000 ₫</p>
+                                <p class="product-cart__item-price-old">34.990.900 đ</p>
+                                <p class="product-cart__item-price-discount">Giảm 15%</p>
+
+                            </div>
+                            <div class="product-cart__amount">
+                                <span>Chọn số lượng:</span>
+                                <input type="number" min="1" value="1">
+                            </div>
+                            <ul class="product-cart__pomotion">
+                                <p> Chương trình khuyến mại:</p>
+                                <li class="product-cart__pomotion-item">
+                                    Thu cũ lên đời - Trợ giá 1 triệu
+                                </li>
+                                <li class="product-cart__pomotion-item">
+                                    Nhập mã CPSONL500 - Giảm thêm 500k khi thanh toán qua VNPay trên website hoặc CPS500
+                                    qua QR Offline tại cửa hàng
+                                </li>
+                            </ul>
+
+
+                        </div>
+                        <div class="product-cart__item-delete" >
+                            <i class="fa-light fa-x"></i>
+                         </div>
+                         <!-- <script>
+                            function delete_cart() {
+                                $("product-cart__item").append("hiiiiiiiiiiiiiiiii")
+                            }
+                         </script> -->
+
+                    </div>
+
+                </div>
+                <div class="product-cart__order">
+                    <div class="product-cart__order-header">
+                        <h3>Tổng tiền tạm tính:</h3>
+                        <p class="product-cart__order-price">29.690.000 ₫</p>
+                    </div>
+                    <button class="btn btn--primary product-cart__order-btn">
+                        TIẾN HÀNH ĐẶT HÀNG
+                    </button>
+                    <a href="./index.html"class= "product-cart__order-btn-orther">                  
+                       CHỌN THÊM SẢN PHẨM KHÁC
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

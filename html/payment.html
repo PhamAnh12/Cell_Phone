@@ -1,0 +1,128 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Phone</title>
+    <!-- import JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- import css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/cart.css">
+    <link rel="stylesheet" href="../assets/css/payment.css">
+    <script src="../program.js"></script>
+
+</head>
+<script>
+    $(function () {
+        $(".header-app").load("header.html");
+    });
+</script>
+<div class="header-app">
+
+</div>
+<div class="payment">
+    <div class="grid">
+        <div class="grid__row">
+
+            <div class="grid__colunm-3-4" style="width: 600px; margin:auto;">
+                <div class="product-car__header">
+                    <a href="./index.html" class="product-car__header-back-link">
+                        <i class="fa-solid fa-angle-left product-car__header-back-icon "></i>
+                        <h3 class="product-car__header-back-content">
+                            Trở về
+                        </h3>
+                    </a>
+
+                    <h3 class="product-car__heading">
+                        Thông tin đặt hàng
+                    </h3>
+                </div>
+                <div class="payment__content">
+
+                    <div class="payment__content-list-input">
+                        <h3 class="payment__content-heading-input">Thông tin khách hàng</h3>
+                        <input type="text"  placeholder="Họ và tên (bắt buộc)" required>
+                        <input type="tel"  placeholder="Số điện thoại (bắt buộc)" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                        <input type="email" placeholder="Email (Vui lòng điền email để nhập hoá đơn VAT)">
+                    </div>
+                    <div class="payment__content-delivery">
+                        <h3 >Nhập địa chỉ giao hàng</h3>
+                        <!-- <div class="payment__content-select-list">
+                            <input type="radio"
+                                id="at_store">
+                            <label for="at_store">Nhận tại cửa hàng</label>
+                            <input type="radio"  id="at_home">
+                            <label for="at_home">Giao hàng tận nơi </label>
+                        </div> -->
+                        <div class="payment__content-address">
+                            <select name="" id="" class="payment__content-address-domain">
+                                <option value="mienbac">Miền bắc</option>
+                                <option value="mienman">Miền nam</option>
+                            </select>
+                            <div class="payment__content-address-district">
+                                <select name="" id="" class="">
+                                    <option value="">Tỉnh/thành</option>
+                                    <option value="">Hà nội</option>
+                                </select>
+                                <select name="" id="" class="">
+                                    <option value="quan">Quận/Huyện</option>
+                                    <option value="">Quận Cầu Giấy</option>
+                                    <option value="">Quận Thanh Xuân</option>
+                                    <option value="">Quận Hà Đông </option>
+                                    <option value="">Quận Đống Đa</option>
+                                </select>
+                              
+                            </div>
+                            <!-- <select name="" id="" class="payment__content-address-shop">
+                                <option value="">Chọn địa chỉ cửa hàng</option>
+
+                            </select> -->
+                            <input type="text" 
+                                placeholder="Số nhà, tên đường">
+                           
+                            
+                        </div>
+                        <input type="text"  placeholder="Yêu cầu khác">
+                        <h3 >Chọn cách thức thanh toán</h3>
+                        <div class="payment__content-select-list">
+                            <input type="radio"
+                                id="at_store">
+                            <label for="at_store">Nhận hàng mới thanh toán </label>
+                            <input type="radio"  id="at_home">
+                            <label for="at_home">Chuyển khoản qua tài khoản</label>
+                            <div class="payment__content-transfer">
+                              <h4>Vui lòng chuyển khoản qua tài khoản </h4>
+                              <p>STK:0987654321</p>
+                              <p>Nội dung chuyển khoản: Tên_Khách_hàng, tên sản mua  </p>
+                            </div>
+                        </div>  
+                        <div class="payment__content-isvat">
+                            <input type="checkbox" id="isvat">
+                            <label for="isvat">Yêu cầu xuất hóa đơn công ty (Vui lòng điền email để nhận hoá đơn
+                                VAT)</label>
+                        </div>
+                   
+
+                    </div>
+
+                </div>
+                <div class="product-cart__order">
+                    <div class="product-cart__order-header">
+                        <h3>Tổng tiền tạm tính:</h3>
+                        <p class="product-cart__order-price">29.690.000 ₫</p>
+                    </div>
+                    <button class="btn btn--primary product-cart__order-btn">
+                        ĐẶT HÀNG
+                    </button>
+                    <a href="./index.html" class="product-cart__order-btn-orther">
+                        CHỌN THÊM SẢN PHẨM KHÁC
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
